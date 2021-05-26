@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+@font-face {
+	font-family: F1;
+	src: url(Catherine\ de\ Beaumont.ttf);
+}
+
+*{
+	box-sizing: border-box;
+}
+
+h1{
+	font-family: F1;
+	text-align: center;
+	font-size: 160px;
+	color:white;
+	font-weight: 300;
+	line-height: 80px;
+	margin:0;
+	margin-bottom: 35px;
+}
+
+h2{
+	font-family: F1;
+	text-align: center;
+	font-size: 90px;
+	color:white;
+	font-weight: 300;
+	line-height: 80px;
+	margin:0;
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
+
+p{
+	text-align: center;
+	font-size: 23px;
+	color:white;
+}
+
+
+body{
+	margin: 0;
+	background-image: url(pics/BGMain.png);
+	background-repeat: no-repeat;
+	background-position: fixed;
+	background-size: 2000px ;
+	background-color: rgb(32, 32, 32);
+	font-family: 'Nunito', sans-serif;
+}
+
+
+#BG{
+	height: 100%;
+	width: 100%;
+	top: 0;
+	position: fixed;
+	background-color: rgba(0,0,0,0.7);
+	z-index: -1;
+}
+.wrapper{
+	width: 80%;
+	margin: auto;
+	margin-bottom: 30px;
+}
+
+header{
+	height: 100%;
+	margin: 30px 0;
+}
+
+header::after{
+	content: "";
+	clear: both;
+	display: table;
+  }
+
+#logo{
+	float: left;
+	display: flex;
+	justify-content: left;
+	align-items: center; 
+	height: 100%;
+	width: 350px;
+	padding-top: 8px;
+}
+
+#logo a{
+	width: 100%;
+	min-width: 350px;
+	content: url(pics/logo_nav.svg);
+}
+
+#logo a:hover{
+	content: url(pics/logo_nav2.svg);
+}
+
+
+#mainnav{
+	float: right;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	height: 100%;
+}
+
+#mainnav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#mainnav ul li{
+	display: inline-block;
+	
+}
+
+#mainnav ul li a:link, #mainnav ul li a:visited{
+	font-family: 'Nunito', sans-serif;
+	font-size: 20px;
+	color: white;
+	display: block;
+	text-decoration:none;
+	margin: 0 5px;
+	padding: 20px;
+	border-radius: 3px;
+}
+
+#mainnav ul li a:active, #mainnav ul li a:hover{
+	background-color:red;
+}
+
+#mainlogo{
+	max-width: 400px;
+	margin: auto;
+	margin-top: 70px;
+}
+
+#mainlogo img{
+	width: 100%;
+}
+
+.foglalj{
+	width: 220px;
+	height: 60px;
+	display: block;
+	margin: auto;
+	margin-top: 30px;
+	font-family: 'Nunito', sans-serif;
+	font-size: 25px;
+	font-weight: 700;
+	color:white;
+	background-color: red;
+	border: 0px;
+	border-radius: 5px;
+}
+
+.foglalj:hover{
+	background: black;
+	box-shadow: 0px 0px 10px black;
+	cursor: pointer;
+}
+
+#telefon{
+	color:white;
+	font-family: 'Nunito', sans-serif;
+	font-size: 30px;
+	/*-webkit-text-stroke: 3px white;*/
+	margin:auto;
+	margin-top: 25px;
+	text-align: center;
+}
+
+#urlap{
+	width: 40%;
+	min-width: 500px;
+	color:white;
+	font-family: 'Nunito', sans-serif;
+	font-size: 20px;
+	margin:auto;
+	margin-top: 45px;
+}
+
+#urlap label{
+	font-family: 'Nunito', sans-serif;
+	font-size: 20px;
+}
+
+#urlap input[type=text],
+#urlap input[type=date],
+#urlap input[type=email],
+#nemek{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0 25px 0;
+	display: inline-block;
+	border: none;
+	border-bottom: 3px solid white;
+	background: none;
+	color:white;
+	font-size: 20px;
+}
+
+#nemek option{ 
+	background: black;
+
+}
+
+#urlap input[type=text]:focus,
+#urlap input[type=date]:focus,
+#urlap input[type=email]:focus,
+#nemek:focus{
+	border: none;
+	border-bottom: 3px solid red;
+}
+
+#arlista_wrapper{
+	clear: both;
+	width:40%;
+	min-width: 500px;
+	margin: auto;
+	margin-top: 35px;
+	margin-bottom: 50px;
+}
+
+#arlista{
+	width: 100%;
+	font-size: 20px;
+	border-collapse: collapse;
+	color:white;
+}
+
+#arlista td{
+	border: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+	padding: 15px;
+}
+
+#arlista tr:last-child td { border:none;}
+
+#arlista td:last-child { text-align: right;}
+
+#arlista tr:nth-child(even){
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+#arlista tr:hover {background-color: rgba(255, 255, 255, 0.25);}
+
+#kapcsolat_wrapper{
+	clear: both;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+.mapouter{
+	margin-top: 20px;
+	position: relative;
+	height: 400px;
+	width: 600px;
+}
+
+#kapcsolat{
+	margin-top: 20px;
+	width: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#kapcsolat img{
+	width: 70%;
+}
+
+#kapcsolat_data{
+	font-size: 20px;
+	line-height: 45px;
+	color: white;
+	text-align: center;
+	margin-top: 40px;
+}
+
+#nyitvatartas{
+	width: 600px;
+	height: 400px;
+	font-size: 20px;
+	border-collapse: collapse;
+	color:white;
+	margin-bottom: 50px;
+}
+
+#nyitvatartas table{
+	margin:auto;
+	line-height: 45px;
+}
+
+ #galeria_wrapper{
+	clear: both;
+	margin: auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+ }
+
+.pics_frame{
+	margin: 30px;
+	width: 400px;
+	height: 400px;
+	box-shadow: 0 0 15px rgba(255, 255, 255, .2);
+	border-radius: 5%;
+	background: white;
+ }
+
+ .pics_frame img{
+	height: 100%;
+	border-radius: 5%;
+ }
+
+.pics_frame img:hover{
+	opacity: 80%;
+}
+.pics_frame:hover{
+	box-shadow: 0 0 15px rgba(255, 255, 255, .8);
+}
+
+

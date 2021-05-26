@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<title>Fiktív Barber Shop</title>
+	<link rel="stylesheet" href="css.css">
+	<link rel="icon" href="Pics/ico.ico">
+	<meta charset="UTF-8">
+	<meta name="author" content="Tichy Patrik S4BZVK">
+	<meta name="description" content="Vizsga"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div id="BG"></div>
+	<div class="wrapper">
+		<header>
+			<div id="logo">
+				<a href="index.html"></a>
+			</div>
+			<nav id="mainnav">
+				<ul>
+					<li><a href="foglalas.html">Foglalás</a></li>
+					<li><a href="arlista.html">Árlista</a></li>
+					<li><a href="kapcsolat.html">Kapcsolat</a></li>
+					<li><a href="galeria.html">Galéria</a></li>
+				</ul>
+			</nav>
+		</header>
+		<h1>Foglalás</h1>
+		<p>Töltsd ki az adataid, és foglalj a szabad időpontok egyikére!</p>
+		<div id="urlap">
+			<form>
+				<label for="fname">Vezetéknév</label>
+				<input type="text" id="fname" name="fname" placeholder="Kiss">
+				<label for="lname">Keresztnév</label>
+				<input type="text" id="lname" name="lname" placeholder="Sanyi">
+				<label for="email">E-mail cím</label>
+				<input type="email" id="email" name="email" placeholder="kiss_sanyi_vok@gmail.com">
+				<label for="nemek">Nem</label>
+				<select id="nemek">
+					<option value="ferfi">Férfi</option>
+					<option value="no">Nő</option>
+					<option value="egyeb">Egyéb</option>
+				</select>
+				<label for="idpont">A foglalt időpont:</label>
+				<input type="date" id="idopont">
+			</form>
+			<button class="foglalj" style="margin-bottom: 50px;">FOGLALOK!</button>
+		</div>
+	</div>
+</body>
+</html>
